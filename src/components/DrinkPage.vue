@@ -31,14 +31,14 @@ export default{
 <style scoped>
 .container{
     background: var(--color-background);
-    padding: 20px 0px;
+    top: 5.5rem;
 }
 
 .col{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 50px;
+    justify-content: end;
+    gap: 10%;
     padding: 20px 0px;
     
 }
@@ -56,14 +56,14 @@ export default{
 
 .option{
     justify-content: start;
-    width: 32%;
+    width: 45%;
 }
 
 .back-btn{
     display: flex;
     gap: 10px;
     align-items: baseline;
-    padding: 10px 50px;
+    padding: 10px 60px;
     width: fit-content;
 }
 

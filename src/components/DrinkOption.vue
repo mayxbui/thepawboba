@@ -141,13 +141,14 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    width: 100%;
+    width: 70%;
     padding: 0px 0px 10px;
 }
 
 .topping-left{
     display: flex;
-    align-items: center;
+    align-content: start;
+    align-items: start;
     gap: 10px;
 }
 

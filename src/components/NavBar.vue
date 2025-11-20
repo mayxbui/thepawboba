@@ -21,9 +21,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
+    top:0 !important;
+    z-index:1000;
     height: 5.5em;
+    width: 100%;
     padding: 20px 60px 10px;
+    gap:50px;
 }
 
 img{
