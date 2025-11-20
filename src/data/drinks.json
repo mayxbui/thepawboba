@@ -7,9 +7,12 @@
     "description": "A roasted brown sugar milk tea with a uniquely sweet flavor.",
     "toppings": [
       { "name": "Boba", "price": 0.75 },
-      { "name": "Brown Sugar Boba", "price": 1.00 },
+      { "name": "Brown Sugar Boba", "price": 1 },
       { "name": "Honeycomb", "price": 1.25 }
     ],
-    "sizes": ["Small", "Medium", "Large"]
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness":["0%", "30%", "50%", "70% (default)", "100%"],
+    "ice":["No Ice", "Light Ice", "Regular Ice"],
+    "milk":["2% Milk", "Whole Milk","Almond Milk","Oat Milk","Soy Milk"]
   }
 ]

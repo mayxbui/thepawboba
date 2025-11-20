@@ -8,8 +8,8 @@
             <div class="row drink-detail">
                 <DrinkDetail/>
             </div>
-            <div class="row">
-                <Counter :quantity="quantity" @update:quantity="quantity = $event" />
+            <div class="row option">
+                <DrinkOption/>
             </div>
         </div>
     
@@ -17,18 +17,13 @@
 </template>
 
 <script>
-import Counter from "./Counter.vue"
 import DrinkDetail from "./DrinkDetail.vue";
+import DrinkOption from "./DrinkOption.vue"
 
 export default{
     components:{
-        Counter,
         DrinkDetail,
-    },
-    data(){
-        return{
-            quantity:1,
-        }
+        DrinkOption
     },
 }
 </script>
@@ -36,22 +31,32 @@ export default{
 <style scoped>
 .container{
     background: var(--color-background);
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 .col{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     gap: 50px;
+    padding: 20px 0px;
+    
 }
 
 .row{
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .drink-detail{
     justify-content:start;
+    width: 30%;
+}
+
+.option{
+    justify-content: start;
+    width: 32%;
 }
 
 .back-btn{
@@ -68,4 +73,5 @@ export default{
     font-weight: 500;
     font-size: 1.3rem;
 }
+
 </style>

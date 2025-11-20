@@ -35,20 +35,20 @@ export default {
 <style scoped>
 .container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    justify-content: flex-start;
+    align-items: baseline;
     gap: 15px;
-    flex-wrap: nowrap;
+    width: fit-content;
 }
 
 p{
     font-weight: 650;
-    width: 20px;
+    width: 32px;
     text-align: center;
     font-size: 1.2rem;
 
 }
+
 button{
     background: var(--color-primary);
     width: 32px;
@@ -57,6 +57,7 @@ button{
     color: white;
     cursor: pointer;
     font-size: 1.2rem;
+    margin-bottom: 0px !important;
 }
 
 button:hover{

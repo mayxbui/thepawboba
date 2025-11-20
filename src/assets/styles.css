@@ -31,12 +31,14 @@ html body {
 }
 h1{
     font-family: var(--font-header);
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 500;
+    color: var(--color-primary);
 }
 
 h2{
     font-family: var(--font-heading);
     font-size: 20px;
     font-weight: 500;
+    color: var(--color-primary);
 }
