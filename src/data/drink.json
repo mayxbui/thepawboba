@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "name": "Okinawa Milk Tea",
+    "price": 5.99,
+    "image": "src/assets/okinawa.jpg",
+    "description": "A roasted brown sugar milk tea with a uniquely sweet flavor.",
+    "toppings": [
+      { "name": "Boba", "price": 0.75 },
+      { "name": "Brown Sugar Boba", "price": 1.00 },
+      { "name": "Honeycomb", "price": 1.25 }
+    ],
+    "sizes": ["Small", "Medium", "Large"]
+  }
+]

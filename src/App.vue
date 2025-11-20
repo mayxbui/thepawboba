@@ -1,25 +1,11 @@
 <template>
-    <div>
-        <NavBar/>
-        <DrinkDetail/>
-    </div>
+  <div>
+    <NavBar />
+    <router-view />
+  </div>
 </template>
 
-<script>
-
-import NavBar from "./components/NavBar.vue";
-import DrinkDetail from "./components/DrinkDetail.vue";
-
-
-export default{
-    name: "HiveTea",
-    components:{
-        NavBar,
-        DrinkDetail,
-
-    }
-}
+<script setup>
+import NavBar from './components/NavBar.vue'
+import DrinkPage from './components/DrinkPage.vue';
 </script>
-
-<style>
-</style>

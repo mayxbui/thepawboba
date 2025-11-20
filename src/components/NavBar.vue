@@ -13,7 +13,6 @@
 </template>
 
 <script>
-
 </script>
 
 <style scoped>
@@ -23,8 +22,8 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    height: 4.5em;
-    padding: 20px 50px 10px;
+    height: 5.5em;
+    padding: 20px 60px 10px;
 }
 
 img{
@@ -33,11 +32,11 @@ img{
 }
 
 .menu {
-  display: flex;
-  gap: 50px;
-  font-size: 1em;
-  font-weight: 400;
-  padding: 10px 0px 0px;
+    display: flex;
+    gap: 50px;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px 10px 0px;
 }
 
 .menu li{
@@ -47,13 +46,17 @@ img{
 }
 
 .menu a {
-  color: var(--color-text-light) !important; 
-  text-decoration: none;                    
-  font-family: var(--font-header);
+    color: var(--color-text-light); 
+    text-decoration: none;                    
+    font-family: var(--font-header);
 }
 
 .menu a:visited {
-  color: var(--color-text-light); 
+    color: var(--color-text-light); 
+}
+
+a:hover{
+  color: var(--color-secondary-accent-1) !important;
 }
     
 </style>
