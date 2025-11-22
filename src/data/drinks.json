@@ -14,5 +14,315 @@
     "sweetness":["0%", "30%", "50%", "70% (default)", "100%"],
     "ice":["No Ice", "Light Ice", "Regular Ice"],
     "milk":["2% Milk", "Whole Milk","Almond Milk","Oat Milk","Soy Milk"]
+  },
+  {
+    "id": 2,
+    "name": "Matcha Latte",
+    "price": 6.49,
+    "image": "src/assets/matcha-latte.jpg",
+    "description": "Premium Japanese matcha whisked to perfection, layered with creamy milk.",
+    "toppings": [
+      { "name": "Boba", "price": 0.75 },
+      { "name": "Red Bean", "price": 1 },
+      { "name": "Cheese Foam", "price": 1.25 }
+    ],
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness": ["0%", "30%", "50%", "70% (default)", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["2% Milk", "Whole Milk", "Almond Milk", "Oat Milk", "Soy Milk"]
+  },
+  {
+    "id": 3,
+    "name": "Taro Milk Tea",
+    "price": 5.79,
+    "image": "src/assets/taro.jpg",
+    "description": "Rich, creamy taro blended with classic milk tea for a sweet, earthy flavor.",
+    "toppings": [
+      { "name": "Boba", "price": 0.75 },
+      { "name": "Pudding", "price": 0.95 },
+      { "name": "Grass Jelly", "price": 0.85 }
+    ],
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness": ["0%", "30%", "50%", "70% (default)", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["2% Milk", "Whole Milk", "Almond Milk", "Oat Milk", "Soy Milk"]
+  },
+  {
+    "id": 4,
+    "name": "Thai Milk Tea",
+    "price": 5.49,
+    "image": "src/assets/thai-milk-tea.jpg",
+    "description": "Bold black tea brewed with spices and sweetened condensed milk.",
+    "toppings": [
+      { "name": "Boba", "price": 0.75 },
+      { "name": "Herbal Jelly", "price": 1 },
+      { "name": "Whipped Cream", "price": 1.25 }
+    ],
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness": ["0%", "30%", "50%", "70% (default)", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["2% Milk", "Whole Milk", "Almond Milk", "Oat Milk", "Soy Milk"]
+  },
+  {
+    "id": 5,
+    "name": "Brown Sugar Boba Milk",
+    "price": 6.99,
+    "image": "src/assets/brown-sugar.jpg",
+    "description": "Fresh milk swirled with caramelized brown sugar syrup and warm boba.",
+    "toppings": [
+      { "name": "Brown Sugar Boba", "price": 1 },
+      { "name": "Cheese Foam", "price": 1.25 },
+      { "name": "Pudding", "price": 0.95 }
+    ],
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness": ["0%", "30%", "50%", "70% (default)", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["2% Milk", "Whole Milk", "Almond Milk", "Oat Milk", "Soy Milk"]
+  },
+  {
+    "id": 6,
+    "name": "Strawberry Matcha Latte",
+    "price": 6.79,
+    "image": "src/assets/strawberry-matcha.jpg",
+    "description": "Layers of fresh strawberry purée, creamy milk, and earthy matcha.",
+    "toppings": [
+      { "name": "Boba", "price": 0.75 },
+      { "name": "Lychee Jelly", "price": 0.90 },
+      { "name": "Whipped Cream", "price": 1.25 }
+    ],
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness": ["0%", "30%", "50%", "70% (default)", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["2% Milk", "Whole Milk", "Almond Milk", "Oat Milk", "Soy Milk"]
+  },
+  {
+    "id": 7,
+    "name": "Jasmine Green Milk Tea",
+    "price": 5.39,
+    "image": "src/assets/jasmine-green.jpg",
+    "description": "Fragrant jasmine tea blended with smooth milk for a refreshing taste.",
+    "toppings": [
+      { "name": "Boba", "price": 0.75 },
+      { "name": "Aloe Vera", "price": 1 },
+      { "name": "Grass Jelly", "price": 0.85 }
+    ],
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness": ["0%", "30%", "50%", "70% (default)", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["2% Milk", "Whole Milk", "Almond Milk", "Oat Milk", "Soy Milk"]
+  },
+  {
+    "id": 8,
+    "name": "Honeydew Milk Tea",
+    "price": 5.49,
+    "image": "src/assets/honeydew.jpg",
+    "description": "A light, refreshing drink with a sweet honeydew aroma.",
+    "toppings": [
+      { "name": "Boba", "price": 0.75 },
+      { "name": "Crystal Boba", "price": 1 },
+      { "name": "Lychee Jelly", "price": 0.90 }
+    ],
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness": ["0%", "30%", "50%", "70% (default)", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["2% Milk", "Whole Milk", "Almond Milk", "Oat Milk", "Soy Milk"]
+  },
+  {
+    "id": 9,
+    "name": "Wintermelon Milk Tea",
+    "price": 5.29,
+    "image": "src/assets/wintermelon.jpg",
+    "description": "Naturally sweet wintermelon tea topped with creamy milk.",
+    "toppings": [
+      { "name": "Boba", "price": 0.75 },
+      { "name": "Aloe", "price": 1 },
+      { "name": "Herbal Jelly", "price": 0.85 }
+    ],
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness": ["0%", "30%", "50%", "70% (default)", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["2% Milk", "Whole Milk", "Almond Milk", "Oat Milk", "Soy Milk"]
+  },
+  {
+    "id": 10,
+    "name": "Mango Green Tea",
+    "price": 5.19,
+    "image": "src/assets/mango-green.jpg",
+    "description": "Refreshing jasmine green tea mixed with tropical mango purée.",
+    "toppings": [
+      { "name": "Aiyu Jelly", "price": 1 },
+      { "name": "Mango Bits", "price": 1.25 },
+      { "name": "Crystal Boba", "price": 1 }
+    ],
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness": ["0%", "30%", "50%", "70% (default)", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["2% Milk", "Whole Milk", "Almond Milk", "Oat Milk", "Soy Milk"]
+  },
+  {
+    "id": 11,
+    "name": "Passion Fruit Black Tea",
+    "price": 5.29,
+    "image": "src/assets/passionfruit.jpg",
+    "description": "Tangy and vibrant passion fruit blended with robust black tea.",
+    "toppings": [
+      { "name": "Lychee Jelly", "price": 0.90 },
+      { "name": "Aloe Vera", "price": 1 },
+      { "name": "Boba", "price": 0.75 }
+    ],
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness": ["0%", "30%", "50%", "70% (default)", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["2% Milk", "Whole Milk", "Almond Milk", "Oat Milk", "Soy Milk"]
+  },
+  {
+    "id": 12,
+    "name": "Honey Matcha Cloud",
+    "price": 7.49,
+    "image": "src/assets/honey-matcha-cloud.jpg",
+    "description": "Ceremonial-grade matcha shaken with wildflower honey and topped with a light milk cloud foam.",
+    "toppings": [
+      { "name": "Honey Boba", "price": 0.95 },
+      { "name": "Matcha Foam", "price": 1.25 },
+      { "name": "Aloe", "price": 1 }
+    ],
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness": ["0%", "30%", "50%", "70%", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["Whole Milk", "Oat Milk", "Soy Milk"]
+  },
+  {
+    "id": 13,
+    "name": "Hivetea Golden Pearl Latte",
+    "price": 7.29,
+    "image": "src/assets/golden-pearl-latte.jpg",
+    "description": "A rich roasted milk tea infused with golden syrup and silky handmade golden boba.",
+    "toppings": [
+      { "name": "Golden Boba", "price": 1.25 },
+      { "name": "Cheese Foam", "price": 1.25 }
+    ],
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness": ["0%", "30%", "50%", "70%", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["Whole Milk", "Oat Milk", "Almond Milk"]
+  },
+  {
+    "id": 14,
+    "name": "Brown Sugar Crème Brûlée Milk",
+    "price": 7.99,
+    "image": "src/assets/creme-brulee.jpg",
+    "description": "Caramelized brown sugar milk topped with torched crème brûlée foam and warm pearls.",
+    "toppings": [
+      { "name": "Brown Sugar Boba", "price": 1 },
+      { "name": "Crème Brûlée Foam", "price": 1.50 }
+    ],
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness": ["30%", "50%", "70%", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["Whole Milk", "Oat Milk"]
+  },
+  {
+    "id": 15,
+    "name": "Jade Citrus Breeze",
+    "price": 6.79,
+    "image": "src/assets/jade-citrus.jpg",
+    "description": "Refreshing citrus-infused jasmine tea shaken with lemon zest and topped with crystal boba.",
+    "toppings": [
+      { "name": "Crystal Boba", "price": 1 },
+      { "name": "Aiyu Jelly", "price": 1.25 }
+    ],
+    "sizes": ["Small (16oz)", "Medium (20oz)", "Large (24oz)"],
+    "sweetness": ["0%", "30%", "50%", "70%", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"]
+  },
+  {
+    "id": 16,
+    "name": "Strawberry Matcha Blossom",
+    "price": 7.49,
+    "image": "src/assets/strawberry-blossom.jpg",
+    "description": "Layered drink with house-made strawberry purée, cold milk, and ceremonial matcha.",
+    "toppings": [
+      { "name": "Strawberry Jelly", "price": 1.10 },
+      { "name": "Boba", "price": 0.75 }
+    ],
+    "sizes": ["Small", "Medium", "Large"],
+    "sweetness": ["0%", "30%", "50%", "70%", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["Whole Milk", "Oat Milk", "Soy Milk"]
+  },
+  {
+    "id": 17,
+    "name": "Mango Coconut Snow",
+    "price": 7.29,
+    "image": "src/assets/mango-coconut.jpg",
+    "description": "Mango green tea blended with coconut milk and topped with chewy mango jelly.",
+    "toppings": [
+      { "name": "Mango Jelly", "price": 1.20 },
+      { "name": "Crystal Boba", "price": 1 }
+    ],
+    "sizes": ["Small", "Medium", "Large"],
+    "sweetness": ["0%", "30%", "50%", "70%", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"]
+  },
+  {
+    "id": 18,
+    "name": "Lavender Honey Milk Tea",
+    "price": 6.99,
+    "image": "src/assets/lavender-honey.jpg",
+    "description": "Soothing lavender milk tea lightly sweetened with floral honey.",
+    "toppings": [
+      { "name": "Honey Boba", "price": 0.95 },
+      { "name": "Crystal Jelly", "price": 0.90 }
+    ],
+    "sizes": ["Small", "Medium", "Large"],
+    "sweetness": ["0%", "30%", "50%", "70%", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["Whole Milk", "Oat Milk"]
+  },
+  {
+    "id": 19,
+    "name": "Caramel Rose Latte",
+    "price": 7.59,
+    "image": "src/assets/caramel-rose.jpg",
+    "description": "A romantic blend of rose milk tea, dark caramel swirl, and soft rose cream.",
+    "toppings": [
+      { "name": "Rose Jelly", "price": 1.25 },
+      { "name": "Boba", "price": 0.75 }
+    ],
+    "sizes": ["Small", "Medium", "Large"],
+    "sweetness": ["0%", "30%", "50%", "70%", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["Whole Milk", "Oat Milk", "Almond Milk"]
+  },
+  {
+    "id": 20,
+    "name": "Black Sesame Cream Milk",
+    "price": 7.49,
+    "image": "src/assets/black-sesame.jpg",
+    "description": "Nutty roasted black sesame folded into creamy milk and topped with whipped cream.",
+    "toppings": [
+      { "name": "Boba", "price": 0.75 },
+      { "name": "Pudding", "price": 0.95 }
+    ],
+    "sizes": ["Small", "Medium", "Large"],
+    "sweetness": ["0%", "30%", "50%", "70%", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"],
+    "milk": ["Whole Milk", "Oat Milk", "Soy Milk"]
+  },
+  {
+    "id": 21,
+    "name": "Lychee Blossom Refresher",
+    "price": 6.79,
+    "image": "src/assets/lychee-blossom.jpg",
+    "description": "Light and floral drink with lychee green tea, rose essence, and real lychee bits.",
+    "toppings": [
+      { "name": "Lychee Jelly", "price": 1 },
+      { "name": "Crystal Boba", "price": 1 }
+    ],
+    "sizes": ["Small", "Medium", "Large"],
+    "sweetness": ["0%", "30%", "50%", "70%", "100%"],
+    "ice": ["No Ice", "Light Ice", "Regular Ice"]
   }
 ]
+
+

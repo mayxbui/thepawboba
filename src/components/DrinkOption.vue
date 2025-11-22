@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div v-if="drink" class="container">
         <h1>{{ drink.name }}</h1>
         <p class="drink-price">${{ drink.price.toFixed(2) }}</p>
         <Counter
@@ -9,23 +9,18 @@
         />
         <h2>Toppings</h2>
         <div
-            v-for="(topping,index) in drink.toppings"
-            :key="index"
+            v-for="(topping,i) in drink.toppings"
+            :key="i"
             class="topping-item"
         >
             <div class="topping-left">
-                <Checkbox 
-                    v-model="selectTopping"
-                    :input-id="'topping'+index"
-                    :value="topping"
-                    binary/>
                 <input
                     type="checkbox"
-                    :id="'topping' + index"
+                    :id="'topping' + i"
                     :value="topping"
                     v-model="selectTopping"
                 />
-                <label :for="'topping' + index">{{ topping.name }}</label>
+                <label :for="'topping' + i">{{ topping.name }}</label>
             </div>
             <span class="topping-price">${{ topping.price.toFixed(2) }}</span>
             
@@ -33,47 +28,42 @@
 
         <h2>Size</h2>
         <div>
-            <select v-model="selectSize">
-                <option 
-                    v-for="size in drink.sizes"
-                    :key="size"
-                    :value="size"
-                >{{ size }}</option>
-            </select>
+            <Dropdown
+                :options="drink.sizes"
+                v-model="selectSize"
+                placeholder="Select Size"
+            />
         </div>
 
         <h2>Sweetness</h2>
         <div>
-            <select v-model="selectSweet">
-                <option
-                    v-for="sweet in drink.sweetness"
-                    :key="sweet"
-                    :value="sweet"
-                    >{{sweet}}</option>
-            </select>
+            <Dropdown
+                :options="drink.sweetness"
+                v-model="selectSweet"
+                placeholder="Select Sweetness"
+            />
         </div>
 
         <h2>Ice Level</h2>
         <div>
-            <select v-model="selectIce">
-                <option
-                    v-for="ice in drink.ice"
-                    :key="ice"
-                    :value="ice"
-                    >{{ ice }}</option>
-            </select>
+            <Dropdown
+                :options="drink.ice"
+                v-model="selectIce"
+                placeholder="Select Ice"
+            />
         </div>
 
         <h2>Milk</h2>
         <div>
-            <select v-model="selectMilk">
-                <option
-                    v-for="milk in drink.milk"
-                    :key="milk"
-                    :value="milk"
-                    >{{ milk }}</option>
-            </select>
+            <Dropdown
+                :options="drink.milk"
+                v-model="selectMilk"
+                placeholder="Select Milk"
+            />
         </div>
+    </div>
+    <div v-else>
+        Loading...
     </div>
 </template>
 
@@ -81,27 +71,41 @@
 import Counter from "./Counter.vue"
 import drinks from '../data/drinks.json'
 import Checkbox from 'primevue/checkbox';
-import CheckboxGroup from 'primevue/checkboxgroup';
+import Dropdown from './Dropdown.vue'
+import { PrimeVue } from "@primevue/core";
 
-
-export default{
-    components:{
+export default {
+    components: {
         Counter,
+        Dropdown,
         Checkbox,
-        CheckboxGroup
+        PrimeVue
     },
-    data(){
-        return{
-            quantity:1,
-
-            drink: drinks[0],
-            selectTopping:[],
-            selectSize:drinks[0].sizes[0],
-            selectSweet:drinks[0].sweetness[3],
-            selectIce:drinks[0].ice[2],
-            selectMilk:drinks[0].milk[0]
+    props: {
+        drinkId: Number
+    },
+    data() {
+        return {
+            drinks,
+            drink: null,
+            quantity: 1,
+            selectTopping: [],
+            selectSize: "",
+            selectSweet: "",
+            selectIce: "",
+            selectMilk: ""
         }
     },
+    mounted() {
+        this.drink = this.drinks.find(d => d.id === Number(this.drinkId));
+
+        if (this.drink) {
+            this.selectSize = this.drink.sizes[0];
+            this.selectSweet = this.drink.sweetness[3];
+            this.selectIce = this.drink.ice[2];
+            this.selectMilk = this.drink.milk[0];
+        }
+    }
 
 }
 </script>
@@ -137,6 +141,10 @@ h2 {
     margin: 15px 0px;
 }
 
+.p-checkbox{
+    transform: scale(1.2)
+}
+
 .topping-item{
     display: flex;
     justify-content: space-between;
@@ -156,6 +164,4 @@ h2 {
     min-width: 50px;
     justify-content: end !important;
 }
-
-
 </style>
