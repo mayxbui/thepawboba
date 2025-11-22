@@ -80,7 +80,7 @@ export default {
         PrimeVue
     },
     props: {
-        drinkId: String
+        drinkId: Number
     },
     data() {
         return {
@@ -95,7 +95,7 @@ export default {
         }
     },
     mounted() {
-        this.drink = this.drinks.find(d => d.id === this.drinkId);
+        this.drink = this.drinks.find(d => d.id === Number(this.drinkId));
 
         if (this.drink) {
             this.selectSize = this.drink.sizes[0];

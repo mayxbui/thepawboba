@@ -2,7 +2,7 @@
     <div class="container">
         <div class="back-btn">
             <font-awesome-icon icon="fa-solid fa-chevron-left" size="xs" color="#081f5c"/>
-            <router-link to="{ name: 'Order' }">Back</router-link>
+            <router-link to="/Order">Back</router-link>
         </div>
         <div class="col">
             <div class="row drink-detail">
@@ -40,7 +40,6 @@ export default{
 <style scoped>
 .container{
     background: var(--color-background);
-    top: 5.5rem;
 }
 
 .col{

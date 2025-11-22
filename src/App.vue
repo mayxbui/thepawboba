@@ -16,6 +16,6 @@ import NavBar from './components/NavBar.vue'
 
 <style scoped>
 .container{
-    padding-top: 5.3rem;
+    padding-top: 4.3rem !important;
 }
 </style>

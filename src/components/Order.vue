@@ -59,7 +59,10 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px 0px;
+  padding: 20px 0px;
+}
+h1{
+  padding-top: 10px;
 }
 
 .menu-filter{
@@ -67,7 +70,7 @@ export default {
   width: 50%;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .menu-item-box{

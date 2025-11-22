@@ -27,7 +27,7 @@ import Image from 'primevue/image'
 export default{
     components:{ Image },
     props:{
-        drinkId: String
+        drinkId: Number
     },
     data(){
         return{
