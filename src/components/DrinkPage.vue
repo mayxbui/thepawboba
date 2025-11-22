@@ -2,29 +2,38 @@
     <div class="container">
         <div class="back-btn">
             <font-awesome-icon icon="fa-solid fa-chevron-left" size="xs" color="#081f5c"/>
-            <router-link to="/">Back</router-link>
+            <router-link to="{ name: 'Order' }">Back</router-link>
         </div>
         <div class="col">
             <div class="row drink-detail">
-                <DrinkDetail/>
+                <DrinkDetail :drinkId="$route.params.id" />
             </div>
             <div class="row option">
-                <DrinkOption/>
+                <DrinkOption :drinkId="$route.params.id"/>
             </div>
         </div>
-    
     </div>
 </template>
 
 <script>
+import drinks from '../data/drinks.json'
 import DrinkDetail from "./DrinkDetail.vue";
 import DrinkOption from "./DrinkOption.vue"
 
 export default{
-    components:{
+    components: {
         DrinkDetail,
         DrinkOption
     },
+    data() {
+        return {
+            drink: null
+        }
+    },
+    mounted() {
+        const id = this.$route.params.id;
+        this.drink = drinks.find(d => d.id === id);
+    }
 }
 </script>
 

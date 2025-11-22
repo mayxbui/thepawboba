@@ -62,9 +62,7 @@
             />
         </div>
     </div>
-    <div v-else>
-        Loading...
-    </div>
+    <div v-else>Loading...</div>
 </template>
 
 <script>
@@ -82,7 +80,7 @@ export default {
         PrimeVue
     },
     props: {
-        drinkId: Number
+        drinkId: String
     },
     data() {
         return {
@@ -97,7 +95,7 @@ export default {
         }
     },
     mounted() {
-        this.drink = this.drinks.find(d => d.id === Number(this.drinkId));
+        this.drink = this.drinks.find(d => d.id === this.drinkId);
 
         if (this.drink) {
             this.selectSize = this.drink.sizes[0];

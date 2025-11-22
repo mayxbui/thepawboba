@@ -1,11 +1,12 @@
 <template>
-    <div id="app" class="navbar">
+    <div id="app" class="navbar-container">
         <router-link to="/">
             <img src="../assets/hivetea2-dark.svg" alt="logo"/>
         </router-link>
-        <ul class="menu">
+        <ul class="navbar">
+            <li><router-link to="/">HOME</router-link></li>
             <li><router-link to="/">ABOUT US</router-link></li>
-            <li><router-link to="/">ORDER</router-link></li>
+            <li><router-link to="/Order">ORDER</router-link></li>
             <li><router-link to="/">CART</router-link></li>
             <li><router-link to="/">LOG IN</router-link></li>
         </ul>
@@ -16,7 +17,7 @@
 </script>
 
 <style scoped>
-.navbar{
+.navbar-container{
     background: var(--color-primary);
     display: flex;
     justify-content: space-between;
@@ -35,7 +36,7 @@ img{
     height: auto;
 }
 
-.menu {
+.navbar {
     display: flex;
     gap: 50px;
     font-size: 1em;
@@ -43,23 +44,23 @@ img{
     padding: 10px 10px 0px;
 }
 
-.menu li{
+.navbar li{
     font-family: var(--font-header);
     list-style: none;
     font-size: 1.2em;
 }
 
-.menu a {
+.navbar a {
     color: var(--color-text-light); 
     text-decoration: none;                    
     font-family: var(--font-header);
 }
 
-.menu a:visited {
+.navbar a:visited {
     color: var(--color-text-light); 
 }
 
-a:hover{
+.navbar a:hover{
   color: var(--color-secondary-accent-1) !important;
 }
     

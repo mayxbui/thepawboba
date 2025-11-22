@@ -1,28 +1,49 @@
 <template>
-    <div class="container">
-    <Image
-        :src="drinkImg"
-        alt="Drink Image"
-        class="img-fit"
-        @error="onError"
-        preview/>
-    </div>
+    <div v-if="drink">
+        <div class="container">
+        <Image
+            :src="drinkImg"
+            alt="Drink Image"
+            class="img-fit"
+            @error="onError"
+            preview/>
+        </div>
 
-    <h2>Description</h2>
-    <p>{{ drink.description }}</p>
+        <h2>Description</h2>
+        <p>{{ drink.description }}</p>
+    </div>
+    <div v-else>Loading...</div>
+    
+
+    
 </template>
 
 <script>
-import Image from 'primevue/image';
 import fallbackImg from '../assets/sampleImg.svg'
 import drinks from '../data/drinks.json'
+import Image from 'primevue/image'
+
 
 export default{
     components:{ Image },
+    props:{
+        drinkId: String
+    },
     data(){
         return{
-            drink:drinks[0],
-            drinkImg: drinks[0].image || fallbackImg
+            drinks,
+            drink:null,
+            drinkImg: fallbackImg
+        }
+    },
+    mounted(){
+        this.drink = this.drinks.find(d => d.id === Number(this.drinkId));
+        if(this.drink){
+            try{
+                this.drinkImg=this.drink.image;
+            } catch(e){
+                this.drinkImg=fallbackImg;
+            }
         }
     },
     methods:{
