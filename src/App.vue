@@ -1,21 +1,24 @@
 <template>
   <div>
-    <NavBar />
-    <div class="container">
-        <router-view />
+    <NavBar v-if="route.path !== '/login'" />
+
+    <div :class="route.path !== '/login' ? 'container' : ''">
+      <router-view />
     </div>
-    <!-- <Footer/> -->
-    
   </div>
 </template>
 
 <script setup>
 import NavBar from './components/NavBar.vue'
-// import Footer from './components/Footer.vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const hideOn = ['Login', 'SignUp']
+const showNav = !hideOn.includes(route.name)
 </script>
 
 <style scoped>
-.container{
-    padding-top: 4.3rem !important;
+.container {
+  padding-top: 4.3rem;
 }
 </style>

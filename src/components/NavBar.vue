@@ -4,11 +4,11 @@
             <img src="../assets/hivetea2-dark.svg" alt="logo"/>
         </router-link>
         <ul class="navbar">
-            <li><router-link to="/">HOME</router-link></li>
+            <li><router-link to="/Home">HOME</router-link></li>
             <li><router-link to="/">ABOUT US</router-link></li>
             <li><router-link to="/Order">ORDER</router-link></li>
-            <li><router-link to="/">CART</router-link></li>
-            <li><router-link to="/">LOG IN</router-link></li>
+            <li><router-link to="/Cart">CART</router-link></li>
+            <li><router-link to="/Login">LOG IN</router-link></li>
         </ul>
     </div>
 </template>
