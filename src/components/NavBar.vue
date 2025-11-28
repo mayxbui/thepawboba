@@ -5,7 +5,6 @@
         </router-link>
         <ul class="navbar">
             <li><router-link to="/Home">HOME</router-link></li>
-            <li><router-link to="/">ABOUT US</router-link></li>
             <li><router-link to="/Order">ORDER</router-link></li>
             <li><router-link to="/Cart">CART</router-link></li>
             <li><router-link to="/Login">LOG IN</router-link></li>

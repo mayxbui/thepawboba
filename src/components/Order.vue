@@ -2,7 +2,10 @@
   <div class="menu-container">
     <h1>OUR MENU</h1>
     <div class="menu-filter">
-      <p class="pi pi-search"></p>
+      <p 
+        class="pi pi-search" 
+        @click="open-search"
+        ></p>
       <p>All</p>
       <p>Special</p>
       <p>Milk Tea</p>
@@ -48,6 +51,13 @@ export default {
     },
     onError(){
       this.drinks.image=fallbackImg;
+    },
+    filters:{
+      search: function(value){
+        if(!value) return ''
+        value = this.drinks.name.toString()
+        return value
+      }
     }
   }
 }
@@ -55,12 +65,14 @@ export default {
 
 <style>
 .menu-container {
+  background: var(--color-background);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px 0px;
 }
+
 h1{
   padding-top: 10px;
 }
@@ -73,6 +85,11 @@ h1{
   margin-bottom: 15px;
 }
 
+.menu-filter p{
+  font-weight: 400;
+}
+
+
 .menu-item-box{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -84,8 +101,7 @@ h1{
   display: grid;
   grid-template-columns: 70% 30%;
   border: 2px solid var(--color-primary);
-  padding: 10px 20px;
-  padding-right: 0px;
+  padding: 0px 20px;
   cursor: pointer;
   align-items: center;
 }
@@ -103,10 +119,11 @@ p{
 
 .menu-item-right{
   display: flex;
+  justify-content: right;
 }
 
 .drink-img{
-  width: 80%;
+  width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }

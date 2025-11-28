@@ -29,16 +29,17 @@
      <div class="divider"></div>
     </section>
 
-    <Order/>
-    <DrinkPage />
-    <Footer />
+    <div class="order">
+      <Order/>
+    </div>
+    
+    <Footer></Footer>
   </div>
 </template>
 
 <script setup>
 import NavBar from '../components/NavBar.vue'
 import Order from '../components/Order.vue'
-import DrinkPage from '../components/DrinkPage.vue'
 import Footer from '../components/Footer.vue'
 </script>
 
@@ -94,5 +95,9 @@ import Footer from '../components/Footer.vue'
   height: 4px;
   background-color: #091a55; 
   margin: 40px auto;
+}
+
+.order{
+  padding-bottom: 80px;
 }
 </style>

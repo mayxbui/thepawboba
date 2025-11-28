@@ -4,6 +4,7 @@ import DrinkPage from '../components/DrinkPage.vue'
 import LogIn from '../components/Login.vue'
 import SignUp from '../components/SignUp.vue'
 import Home from '../components/Home.vue'
+import Cart from '../components/Cart.vue'
 
 const routes = [
   {
@@ -34,13 +35,18 @@ const routes = [
   },
   {
     path: "/",
-    redirect: "/home" //Change to Home after
+    redirect: "/home"
+  },
+  {
+    path: "/cart",
+    name:"Your Cart",
+    component: Cart
   }
 ]
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes
-})
+  const router = createRouter({
+    history: createWebHistory(),
+    routes
+  })
 
 export default router
