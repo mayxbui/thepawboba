@@ -8,7 +8,7 @@
 
         <form @submit.prevent="submitForm" novalidate>
           <div class="form-group">
-            <label for="footer-name">Name:</label>
+            <label for="footer-name">Name</label>
             <input
               id="footer-name"
               type="text"
@@ -21,7 +21,7 @@
           </div>
 
           <div class="form-group">
-            <label for="footer-email">Email:</label>
+            <label for="footer-email">Email</label>
             <input
               id="footer-email"
               type="email"
@@ -34,7 +34,7 @@
           </div>
 
           <div class="form-group">
-            <label for="footer-note">Note:</label>
+            <label for="footer-note">Note</label>
             <textarea
               id="footer-note"
               class="text-area"

@@ -5,12 +5,18 @@ import LogIn from '../components/Login.vue'
 import SignUp from '../components/SignUp.vue'
 import Home from '../components/Home.vue'
 import Cart from '../components/Cart.vue'
+import About from '../components/About.vue'
 
 const routes = [
   {
     path: '/home',
     name: 'home',
     component: Home
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: About
   },
   {
     path: '/Order',
@@ -46,7 +52,10 @@ const routes = [
 
   const router = createRouter({
     history: createWebHistory(),
-    routes
+    routes,
+    scrollBehavior() {
+      return { top: 0, behavior: 'instant' }
+    }
   })
 
 export default router

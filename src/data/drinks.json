@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Okinawa Milk Tea",
+    "category": "Milk Tea",
     "price": 5.99,
     "image": "/img/okinawa.jpg",
     "description": "A roasted brown sugar milk tea with a uniquely sweet flavor.",
@@ -18,6 +19,7 @@
   {
     "id": 2,
     "name": "Matcha Latte",
+    "category": "Special",
     "price": 6.49,
     "image": "/img/matcha-latte.jpg",
     "description": "Premium Japanese matcha whisked to perfection, layered with creamy milk.",
@@ -34,6 +36,7 @@
   {
     "id": 3,
     "name": "Taro Milk Tea",
+    "category": "Milk Tea",
     "price": 5.79,
     "image": "/img/taro.jpg",
     "description": "Rich, creamy taro blended with classic milk tea for a sweet, earthy flavor.",
@@ -50,6 +53,7 @@
   {
     "id": 4,
     "name": "Thai Milk Tea",
+    "category": "Milk Tea",
     "price": 5.49,
     "image": "/img/thai-milk-tea.jpg",
     "description": "Bold black tea brewed with spices and sweetened condensed milk.",
@@ -66,6 +70,7 @@
   {
     "id": 5,
     "name": "Brown Sugar Boba Milk",
+    "category": "Special",
     "price": 6.99,
     "image": "/img/brown-sugar.jpg",
     "description": "Fresh milk swirled with caramelized brown sugar syrup and warm boba.",
@@ -82,6 +87,7 @@
   {
     "id": 6,
     "name": "Strawberry Matcha Latte",
+    "category": "Special",
     "price": 6.79,
     "image": "/img/strawberry-matcha.jpg",
     "description": "Layers of fresh strawberry purée, creamy milk, and earthy matcha.",
@@ -98,6 +104,7 @@
   {
     "id": 7,
     "name": "Jasmine Green Milk Tea",
+    "category": "Milk Tea",
     "price": 5.39,
     "image": "/img/jasmine-green.jpg",
     "description": "Fragrant jasmine tea blended with smooth milk for a refreshing taste.",
@@ -114,6 +121,7 @@
   {
     "id": 8,
     "name": "Honeydew Milk Tea",
+    "category": "Milk Tea",
     "price": 5.49,
     "image": "/img/honeydew.jpg",
     "description": "A light, refreshing drink with a sweet honeydew aroma.",
@@ -130,6 +138,7 @@
   {
     "id": 9,
     "name": "Wintermelon Milk Tea",
+    "category": "Milk Tea",
     "price": 5.29,
     "image": "/img/wintermelon.jpg",
     "description": "Naturally sweet wintermelon tea topped with creamy milk.",
@@ -146,6 +155,7 @@
   {
     "id": 10,
     "name": "Mango Green Tea",
+    "category": "Fruit Tea",
     "price": 5.19,
     "image": "/img/mango-green.jpg",
     "description": "Refreshing jasmine green tea mixed with tropical mango purée.",
@@ -162,6 +172,7 @@
   {
     "id": 11,
     "name": "Passion Fruit Black Tea",
+    "category": "Fruit Tea",
     "price": 5.29,
     "image": "/img/passionfruit.jpg",
     "description": "Tangy and vibrant passion fruit blended with robust black tea.",
@@ -178,6 +189,7 @@
   {
     "id": 12,
     "name": "Honey Matcha Cloud",
+    "category": "Special",
     "price": 7.49,
     "image": "/img/honey-matcha-cloud.jpg",
     "description": "Ceremonial-grade matcha shaken with wildflower honey and topped with a light milk cloud foam.",
@@ -194,6 +206,7 @@
   {
     "id": 13,
     "name": "Hivetea Golden Pearl Latte",
+    "category": "Special",
     "price": 7.29,
     "image": "/img/golden-pearl-latte.jpg",
     "description": "A rich roasted milk tea infused with golden syrup and silky handmade golden boba.",
@@ -209,6 +222,7 @@
   {
     "id": 14,
     "name": "Brown Sugar Crème Brûlée Milk",
+    "category": "Special",
     "price": 7.99,
     "image": "/img/creme-brulee.jpg",
     "description": "Caramelized brown sugar milk topped with torched crème brûlée foam and warm pearls.",
@@ -224,6 +238,7 @@
   {
     "id": 15,
     "name": "Jade Citrus Breeze",
+    "category": "Fruit Tea",
     "price": 6.79,
     "image": "/img/jade-citrus.jpg",
     "description": "Refreshing citrus-infused jasmine tea shaken with lemon zest and topped with crystal boba.",
@@ -238,6 +253,7 @@
   {
     "id": 16,
     "name": "Strawberry Matcha Blossom",
+    "category": "Special",
     "price": 7.49,
     "image": "/img/strawberry-blossom.jpg",
     "description": "Layered drink with house-made strawberry purée, cold milk, and ceremonial matcha.",
@@ -253,6 +269,7 @@
   {
     "id": 17,
     "name": "Mango Coconut Snow",
+    "category": "Fruit Tea",
     "price": 7.29,
     "image": "/img/mango-coconut.jpg",
     "description": "Mango green tea blended with coconut milk and topped with chewy mango jelly.",
@@ -267,6 +284,7 @@
   {
     "id": 18,
     "name": "Lavender Honey Milk Tea",
+    "category": "Milk Tea",
     "price": 6.99,
     "image": "/img/lavender-honey.jpg",
     "description": "Soothing lavender milk tea lightly sweetened with floral honey.",
@@ -282,6 +300,7 @@
   {
     "id": 19,
     "name": "Caramel Rose Latte",
+    "category": "Special",
     "price": 7.59,
     "image": "/img/caramel-rose.jpg",
     "description": "A romantic blend of rose milk tea, dark caramel swirl, and soft rose cream.",
@@ -297,6 +316,7 @@
   {
     "id": 20,
     "name": "Black Sesame Cream Milk",
+    "category": "Special",
     "price": 7.49,
     "image": "/img/black-sesame.jpg",
     "description": "Nutty roasted black sesame folded into creamy milk and topped with whipped cream.",
@@ -312,6 +332,7 @@
   {
     "id": 21,
     "name": "Lychee Blossom Refresher",
+    "category": "Fruit Tea",
     "price": 6.79,
     "image": "/img/lychee-blossom.jpg",
     "description": "Light and floral drink with lychee green tea, rose essence, and real lychee bits.",
@@ -324,5 +345,3 @@
     "ice": ["No Ice", "Light Ice", "Regular Ice"]
   }
 ]
-
-
