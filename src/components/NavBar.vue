@@ -26,41 +26,56 @@
     z-index:1000;
     height: 5.5em;
     width: 100%;
-    padding: 20px 60px 10px;
-    gap:50px;
+    padding: 20px 5% 10px;
+    gap: 50px;
+    box-sizing: border-box;
 }
 
 img{
-    width: 120px;
+    width: clamp(80px, 10vw, 120px);
     height: auto;
 }
 
 .navbar {
     display: flex;
-    gap: 50px;
+    gap: clamp(16px, 3vw, 50px);
     font-size: 1em;
     font-weight: 400;
     padding: 10px 10px 0px;
+    flex-wrap: wrap;
 }
 
 .navbar li{
     font-family: var(--font-header);
     list-style: none;
-    font-size: 1.2em;
+    font-size: clamp(0.85em, 1.5vw, 1.2em);
 }
 
 .navbar a {
-    color: var(--color-text-light); 
-    text-decoration: none;                    
+    color: var(--color-text-light);
+    text-decoration: none;
     font-family: var(--font-header);
 }
 
 .navbar a:visited {
-    color: var(--color-text-light); 
+    color: var(--color-text-light);
 }
 
 .navbar a:hover{
-  color: var(--color-secondary-accent-1) !important;
+  color: rgba(255, 255, 255, 0.65) !important;
 }
-    
+
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 10px 4% 10px;
+    gap: 10px;
+    height: auto;
+    min-height: 4em;
+  }
+
+  .navbar {
+    gap: 12px;
+    padding: 0;
+  }
+}
 </style>

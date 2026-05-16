@@ -4,15 +4,15 @@
 
 
 :root {
-    --color-primary: #081F5C;
-    --color-primary-accent-1:#12327C;
-    --color-primary-accent-2:#0A2B73;
+    --color-primary: #3017FE;
+    --color-primary-accent-1: #2010C8;
+    --color-primary-accent-2: #5040FF;
 
-    --color-secondary: #FFDC74;
-    --color-secondary-accent-1:#FFD24B;
-    --color-secondary-accent-2:#EFC45A;
+    --color-secondary: #FFFFFF;
+    --color-secondary-accent-1: #FFFFFF;
+    --color-secondary-accent-2: #E8E4FF;
 
-    --color-background: #F7F2EB;
+    --color-background: #FFFFFF;
 
     --color-text-light:#FFFFFF;
     --color-text-dark: #000000;

@@ -12,11 +12,11 @@
     <!-- login card -->
     <div class="card">
       <form class="form">
-        <label>USERNAME</label>
-        <input class="ip" type="text" />
+        <label for="login-username">USERNAME</label>
+        <input id="login-username" class="ip" type="text" />
 
-        <label>PASSWORD</label>
-        <input class="ip" type="password" />
+        <label for="login-password">PASSWORD</label>
+        <input id="login-password" class="ip" type="password" />
 
         <button class="login-btn">LOG IN</button>
 
@@ -39,32 +39,36 @@ export default {
 
 <style scoped>
 .login-container {
-  background-color: #061857; 
+  background-color: #3017FE;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;      
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 40px 16px;
+  box-sizing: border-box;
 }
 
 .card {
-  background: #f7f3ee;
-  width: 420px;
-  padding: 40px 50px;
-  border-radius: 20px;
+  background: #ffffff;
+  width: min(420px, 100%);
+  padding: 40px clamp(24px, 5vw, 50px);
+  border-radius: 0;
+  border: 2px solid #ffffff;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .titles {
-    width: 420px;
+    width: min(420px, 100%);
     display: flex;
-    justify-content:space-between;
-    margin-bottom: 20px; 
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .title {
-  font-size: 40px;
+  font-size: clamp(28px, 5vw, 40px);
   margin-bottom: 5px;
   font-weight: 800;
   color: white;
@@ -72,7 +76,9 @@ export default {
 }
 
 .highlight {
-  color: #f4c542;
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .form {
@@ -84,40 +90,40 @@ export default {
 label {
   font-size: 14px;
   font-weight: 700;
-  color: #061857;
+  color: #3017FE;
 }
 input {
   padding: 12px;
-  border-radius: 20px;
-  border: 2px solid #061857;
+  border-radius: 0;
+  border: 2px solid #3017FE;
   font-size: 16px;
   outline: none;
 }
 .login-btn {
-  background: #061857;
+  background: #3017FE;
   color: white;
   padding: 12px;
   margin-top: 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: 0;
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
 }
 
 .login-btn:hover {
-  background: #0b1f80;
+  background: #2010C8;
 }
 .signup-text {
   margin-top: 12px;
   font-size: 14px;
   font-weight: 600;
   text-align: center;
-  color: #061857;
+  color: #3017FE;
 }
 
 .signup-text a {
-  color: #061857;
+  color: #3017FE;
   font-weight: 700;
   text-decoration: underline;
 }
